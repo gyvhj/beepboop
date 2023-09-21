@@ -1,0 +1,111 @@
+include<stdio.h> 
+#include<stdlib.h>
+struct Treenode{
+int data;
+struct Treenode* left;
+struct Treenode* right;
+};
+struct Treenode* create(int data){
+struct TreeNode* newNode = (struct TreeNode*)malloc(sizeof(struct TreeNode));
+    newNode->data = data;
+    newNode->left = NULL;
+    newNode->right = NULL;
+    return newNode;
+}
+void inOrderTraversal(struct TreeNode* root) {
+    if (root != NULL) {
+        inOrderTraversal(root->left);
+        printf("%d ", root->data);
+        inOrderTraversal(root->right);
+    int data; 
+struct Treenode* left;
+struct Treenode* right;
+};
+struct TreeNode* newNode = (struct TreeNode*)malloc(sizeof(struct TreeNode));
+    newNode->data = data;
+    newNode->left = NULL;
+    newNode->right = NULL;
+    return newNode;
+}
+void inOrderTraversal(struct TreeNode* root) {
+    if (root != NULL) {
+        inOrderTraversal(root->left);
+        printf("%d ", root->data);
+        inOrderTraversal(root->right);
+    irintf("%d ", root->data);
+        inOrderTraversal(root->right);
+    }
+}
+
+
+void preOrderTraversal(struct TreeNode* root) {
+    if (root != NULL) {
+        printf("%d ", root->data);
+                                            }
+}
+
+
+void preOrderTraversal(struct TreeNode* root) {
+    if (root != NULL) {
+        printf("%d ", root->data);
+        preOrderTraversal(root->left);
+        preOrderTraversal(root->right)
+
+void postOrderTraversal(struct TreeNode* root) {
+    if (root != NULL) {
+        postOrderTraversal(root->left);nt data; 
+struct Treenode* left;
+struct Treenode* right;
+};
+struct Treenode* create(int data){
+struct TreeNode* newNode = (struct TreeNode*)malloc(sizeof(struct TreeNode));
+    newNode->data = data;
+    newNode->left = NULL;
+    newNode->right = NULL;
+    return newNode;
+}
+void inOrderTraversal(struct TreeNode* root) {
+printf("%d ", root->data);
+    }
+}
+int main(){
+struct treenode* root=NULL;
+int choice,data;
+do{
+        printf("\nMenu:\n");
+        printf("1. Create a binary tree\n");
+        printf("2. In-order traversal\n");
+        printf("3. Pre-order traversal\n");
+        printf("4. Post-order traversal\n");
+        printf("5. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+switch (choice) {
+            case 1:
+                printf("Enter the data for the root node: ");
+                scanf("%d", &data);
+                root = createNode(data);
+                break;
+            case 2:
+                printf("In-order traversal: ");nOrderTraversal(root);
+                printf("\n");
+                break;
+            case 3:
+                printf("Pre-order traversal: ");
+                preOrderTraversal(root);
+                printf("\n");
+                break;
+            case 4:
+                printf("Post-order traversal: ");
+                postOrderTraversal(root);
+                printf("\n");
+                break;
+            case 5:
+                printf("Exiting the program.\n");
+                break;
+            default:
+                printf("Invalid choice! Please try again.\n");
+        }
+    } while (choice != 5);
+return 0;}
+                                     
